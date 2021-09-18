@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 import "./styles/tailwind-pre-build.css";
-import Navbar from "./components/Navbar";
-import LivePortal from "./components/LivePortal";
-import WorkContainer from "./components/WorkContainer";
-import HomePage from "./components/Homepage";
+import Navbar from "./screens/Navbar";
+import FormPage from "./screens/FormPage";
+import BlogpPage from "./screens/BlogpPage";
+import HomePage from "./screens/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -14,8 +14,8 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={HomePage} />
-          <Route path="/liveportal" component={LivePortal} />
-          <Route path="/workcontainer" component={WorkContainer} />
+          <Route path="/formpage" component={FormPage} />
+          <Route path="/blogppage" component={BlogpPage} />
         </Switch>
       </div>
     </Router>
